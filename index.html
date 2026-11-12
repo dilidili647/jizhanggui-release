@@ -7,12 +7,12 @@
 <meta name="description" content="机掌柜是面向二手机门店的本地管理系统，覆盖库存、质检、销售、寄修、寄卖、追账、提成与财务利润，电脑端 + Android 店内端，数据保存在门店电脑。">
 <style>
 :root{
-  --bg:#faf6ef; --bg-soft:#f3ecdf; --card:#ffffff; --line:#ecdfca;
-  --ink:#2b2118; --ink-2:#6b5d4e; --ink-3:#9a8873;
-  --brand:#b8772e; --brand-deep:#8a5418; --brand-soft:#f6e7d2;
-  --dark:#1f1710; --dark-2:#332617;
+  --bg:#f7f9fc; --bg-soft:#eef3f9; --card:#ffffff; --line:#dde7f1;
+  --ink:#1c2733; --ink-2:#4f5f70; --ink-3:#8495a6;
+  --brand:#2563eb; --brand-deep:#1553a8; --brand-soft:#e8f1fd;
+  --dark:#0f1e33; --dark-2:#16293f;
   --green:#2f9e6e; --red:#c0492f; --amber:#d98a2b;
-  --radius:18px; --shadow:0 10px 30px rgba(90,60,20,.10);
+  --radius:18px; --shadow:0 10px 30px rgba(20,60,120,.10);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -34,21 +34,21 @@ nav{position:sticky;top:0;z-index:50;background:rgba(250,246,239,.86);backdrop-f
 @media(max-width:760px){.nav-links{display:none}}
 
 /* hero */
-.hero{background:linear-gradient(160deg,var(--dark) 0%,var(--dark-2) 55%,#4a3419 100%);color:#f7efe2;overflow:hidden}
+.hero{background:linear-gradient(160deg,var(--dark) 0%,var(--dark-2) 55%,#1d3a5f 100%);color:#eaf2fb;overflow:hidden}
 .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:72px 0 80px}
-.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;font-size:13px;color:#ecd9bd}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;font-size:13px;color:#c9def5}
 .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--green)}
 .hero h1{font-size:44px;line-height:1.2;margin:22px 0 18px;font-weight:800;letter-spacing:.5px}
-.hero h1 em{font-style:normal;background:linear-gradient(120deg,#f3c884,#d98a2b);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p.sub{font-size:17px;color:#d9c8b0;max-width:520px}
+.hero h1 em{font-style:normal;background:linear-gradient(120deg,#8fc2ff,#2563eb);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{font-size:17px;color:#c3d4e6;max-width:520px}
 .hero-actions{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:13px;font-weight:700;font-size:15px;transition:.2s}
-.btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:#fff;box-shadow:0 10px 24px rgba(184,119,46,.35)}
+.btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:#fff;box-shadow:0 10px 24px rgba(37,99,235,.35)}
 .btn-primary:hover{transform:translateY(-2px)}
-.btn-ghost{border:1px solid rgba(255,255,255,.25);color:#f3e7d3}
+.btn-ghost{border:1px solid rgba(255,255,255,.25);color:#dbe9f7}
 .btn-ghost:hover{background:rgba(255,255,255,.08)}
 .btn .os{font-size:12px;opacity:.85;font-weight:500}
-.hero-meta{margin-top:22px;font-size:13px;color:#b9a689;display:flex;gap:20px;flex-wrap:wrap}
+.hero-meta{margin-top:22px;font-size:13px;color:#93a8bd;display:flex;gap:20px;flex-wrap:wrap}
 
 /* mock window */
 .mock{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:18px;box-shadow:var(--shadow)}
@@ -60,8 +60,8 @@ nav{position:sticky;top:0;z-index:50;background:rgba(250,246,239,.86);backdrop-f
 .mock-side span.on{background:var(--brand);width:80%}
 .mock-main{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .mock-card{background:rgba(255,255,255,.08);border-radius:13px;padding:14px}
-.mock-card b{display:block;font-size:20px;color:#f3c884}
-.mock-card small{color:#c9b69a;font-size:12px}
+.mock-card b{display:block;font-size:20px;color:#8fc2ff}
+.mock-card small{color:#a9c0d8;font-size:12px}
 @media(max-width:900px){.hero-inner{grid-template-columns:1fr;padding:48px 0 56px}.hero h1{font-size:32px}.mock{display:none}}
 
 /* strip */
@@ -137,12 +137,12 @@ section{padding:72px 0}
 .faq-a p{padding:0 24px 20px;color:var(--ink-2);font-size:14.5px}
 
 /* footer */
-footer{background:var(--dark);color:#cdbba1;padding:48px 0 32px}
+footer{background:var(--dark);color:#b9c9d9;padding:48px 0 32px}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:32px}
-footer h5{color:#f3e7d3;margin-bottom:14px;font-size:15px}
-footer p,footer li{font-size:13.5px;color:#b9a689;list-style:none}
+footer h5{color:#dbe9f7;margin-bottom:14px;font-size:15px}
+footer p,footer li{font-size:13.5px;color:#93a8bd;list-style:none}
 footer ul{display:grid;gap:8px}
-.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:12.5px;color:#8f7c61;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:12.5px;color:#7c90a5;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
 </style>
 </head>
